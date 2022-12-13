@@ -17,6 +17,16 @@ class CreateRequest extends FormRequest
     }
 
     /**
+     * get tweet post data from index page
+     *
+     * @return string
+     */
+    public function tweet()
+    {
+        return $this->input('tweet');
+    }
+
+    /**
      * Get the validation rules that apply to the request.
      *
      * @return array<string, mixed>
