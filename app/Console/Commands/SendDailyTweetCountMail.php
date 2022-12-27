@@ -3,8 +3,9 @@
 namespace App\Console\Commands;
 
 use App\Mail\DailyTweetCount;
+use App\Services\TweetService;
 use App\Models\User;
-use App\Services\Contracts\Mail\Mailer;
+use Illuminate\Contracts\Mail\Mailer;
 use Illuminate\Console\Command;
 
 class SendDailyTweetCountMail extends Command
